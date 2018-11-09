@@ -1,0 +1,70 @@
+{
+  "name": "movie-trailer",
+  "version": "1.0.1",
+  "description": "",
+  "main": "server/index.js",
+  "scripts": {
+    "start": "rimraf dist && rimraf .cache && set NODE_ENV=development && nodemon ./start.js",
+    "build": "rimraf dist && parcel build src/index.html --no-cache --no-source-maps -d dist --public-url ./",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@gitee.com:sschenweb/movie-trailer.git"
+  },
+  "keywords": [
+    "movie",
+    "trailer"
+  ],
+  "author": "sschen",
+  "license": "ISC",
+  "dependencies": {
+    "antd": "^3.10.4",
+    "autoprefixer": "^7.2.5",
+    "axios": "^0.18.0",
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.3",
+    "babel-plugin-import": "^1.11.0",
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "babel-plugin-transform-decorators-legacy": "^1.3.5",
+    "babel-plugin-transform-react-remove-prop-types": "^0.4.19",
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-polyfill": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-0": "^6.24.1",
+    "babel-runtime": "^6.26.0",
+    "bcrypt-nodejs": "0.0.3",
+    "cssnext": "^1.8.4",
+    "ejs": "^2.6.1",
+    "glob": "^7.1.3",
+    "koa": "^2.5.3",
+    "koa-bodyparser": "^4.2.1",
+    "koa-logger": "^3.2.0",
+    "koa-router": "^7.4.0",
+    "koa-session": "^5.10.0",
+    "koa-static": "^5.0.0",
+    "koa-views": "^6.1.4",
+    "lodash": "^4.17.11",
+    "moment": "^2.22.2",
+    "mongoose": "^5.3.6",
+    "nanoid": "^1.3.1",
+    "node-sass": "^4.10.0",
+    "nodemon": "^1.18.6",
+    "parcel-bundler": "^1.10.3",
+    "postcss": "^7.0.5",
+    "pug": "^2.0.3",
+    "puppeteer": "^0.13.0",
+    "qiniu": "^7.2.1",
+    "ramda": "^0.25.0",
+    "react": "^16.1.1",
+    "react-dom": "^16.1.1",
+    "react-router-dom": "^4.3.1",
+    "request": "^2.88.0",
+    "request-promise-native": "^1.0.5",
+    "rimraf": "^2.6.2"
+  },
+  "devDependencies": {
+    "sass": "^1.14.3"
+  }
+}
